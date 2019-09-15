@@ -16,6 +16,7 @@ public class Introduction
 				stateRulesOfGame();
 			}
 			readyForBoard();
+			
 		}
 		
 		private static void greetPlayer()
