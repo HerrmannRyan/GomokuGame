@@ -7,9 +7,9 @@ public class GomokuDriver
 			{
 				
 				Introduction.introduceGame();
-				TimeUnit.SECONDS.sleep(3);
+				TimeUnit.SECONDS.sleep(3);	
+				Board.blankBoard();
 				Display.createDisplay();
-				
 
 			}
 
