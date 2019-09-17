@@ -17,6 +17,14 @@ public class GomokuDriver
 				while(playingMainGame)
 					{
 						PlayingGame.playingGameLogic();
+						Board.playerFillingTheBoards();
+						TimeUnit.MILLISECONDS.sleep(50);
+						Display.createDisplay();
+						Board.computerFillingTheBoards();
+						TimeUnit.SECONDS.sleep(2);
+						System.out.println("Computer is playing...");
+						TimeUnit.SECONDS.sleep(2);
+						Display.createDisplay();
 					}
 				
 

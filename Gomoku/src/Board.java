@@ -27,4 +27,23 @@ public class Board
 		}
 	}
 	
+	public static void playerFillingTheBoards()
+	{
+		
+		board [PlayingGame.rowChoiceInt][PlayingGame.colChoiceInt] = "X";
+		logicBoard[PlayingGame.rowChoiceInt][PlayingGame.colChoiceInt] = 1;
+		
+	}
+	
+	public static void computerFillingTheBoards()
+	{
+		
+		int computerRow = (int)(Math.random()*9);
+		int computerCol = (int)(Math.random()*9);
+		
+		board[computerRow][computerCol] = "O";
+		logicBoard[computerRow][computerCol] = 2;
+		
+	}
+	
 }

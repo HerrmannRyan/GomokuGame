@@ -11,14 +11,17 @@ public class PlayingGame
 		
 		public static void playingGameLogic()
 		{
+			System.out.println("Please choose a coordinate to play your \"Chip\"");
 			
 			String userChoice = userInput.nextLine();
 			
-			rowString = userChoice.substring(1);
+			
 			colString = userChoice.substring(0,1);
+			rowString = userChoice.substring(1);
 			
 			choosingColumn();
 			choosingRow();
+			
 			
 		}
 		
@@ -70,37 +73,38 @@ public class PlayingGame
 				case "0": rowChoiceInt = 0;
 					break;
 					
-				case "1": rowChoiceInt = 0;
+				case "1": rowChoiceInt = 1;
 					break;
 				
-				case "2": rowChoiceInt = 0;
+				case "2": rowChoiceInt = 2;
 					break;
 				
-				case "3": rowChoiceInt = 0;
+				case "3": rowChoiceInt = 3;
 					break;
 				
-				case "4": rowChoiceInt = 0;
+				case "4": rowChoiceInt = 4;
 					break;
 				
-				case "5": rowChoiceInt = 0;
+				case "5": rowChoiceInt = 5;
 					break;
 				
-				case "6": rowChoiceInt = 0;
+				case "6": rowChoiceInt = 6;
 					break;
 				
-				case "7": rowChoiceInt = 0;
+				case "7": rowChoiceInt = 7;
 					break;
 				
-				case "8": rowChoiceInt = 0;
+				case "8": rowChoiceInt = 8;
 					break;
 				
-				case "9": rowChoiceInt = 0;
+				case "9": rowChoiceInt = 9;
 					break;
 				
 				
 			}
 			
 		}
+		
 		
 
 	}
