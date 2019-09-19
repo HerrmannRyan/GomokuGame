@@ -2,46 +2,51 @@
 public class WinningCheck
 	{
 		
-		public static void checkForFiveRow()
+		public static void checkForFiveCol()
 		{
 			
-			boolean checkToRight = true;
-			boolean checkToLeft = false;
-			int rowCheckingStart = PlayingGame.rowChoiceInt;
-			int rowWinCounter = 0;
+			boolean checkToDown = true;
+			boolean checkToUp = false;
+			int colCheckingStart = PlayingGame.rowChoiceInt;
+			int colWinCounter = 0;
 			
-			while (checkToRight)
+			while (checkToDown)
 			{
 				
 				
-				if (Board.logicBoard[rowCheckingStart][PlayingGame.colChoiceInt] == 1)
+				if (Board.logicBoard[colCheckingStart][PlayingGame.colChoiceInt] == 1)
 					{
-						rowWinCounter ++;
-						rowCheckingStart ++;
+						colWinCounter ++;
+						colCheckingStart ++;
 					}
 				else
 					{
-						rowCheckingStart = PlayingGame.rowChoiceInt;
-						checkToRight = false;
-						checkToLeft = true;
+						colCheckingStart = PlayingGame.rowChoiceInt;
+						checkToDown = false;
+						checkToUp = true;
 					}
 				
 			}
 			
-			while (checkToLeft)
+			while (checkToUp)
 				{
 					
-					if (Board.logicBoard[rowCheckingStart - 1][PlayingGame.colChoiceInt] == 1)
+					if (Board.logicBoard[colCheckingStart - 1][PlayingGame.colChoiceInt] == 1)
 						{
-							rowWinCounter ++;
-							rowCheckingStart --;
+							colWinCounter ++;
+							colCheckingStart --;
 						}
 					else
 						{
-							checkTo
+							checkToUp = false;
 						}
 					
 				}
+			
+			if (colWinCounter == 5)
+			{
+				GomokuDriver.playingMainGame = false;
+			}
 			
 			
 		}

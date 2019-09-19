@@ -105,6 +105,11 @@ public class PlayingGame
 			
 		}
 		
+		public static void winningTheGame()
+		{
+			System.out.println("Congratulations!!! You win!!!");
+		}
+		
 		
 
 	}

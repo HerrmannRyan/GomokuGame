@@ -18,14 +18,17 @@ public class GomokuDriver
 					{
 						PlayingGame.playingGameLogic();
 						Board.playerFillingTheBoards();
+						WinningCheck.checkForFiveCol();
 						TimeUnit.MILLISECONDS.sleep(50);
 						Display.createDisplay();
 						Board.computerFillingTheBoards();
-						TimeUnit.SECONDS.sleep(2);
+						TimeUnit.SECONDS.sleep(1);
 						System.out.println("Computer is playing...");
-						TimeUnit.SECONDS.sleep(2);
+						TimeUnit.SECONDS.sleep(1);
 						Display.createDisplay();
 					}
+				
+				PlayingGame.winningTheGame();
 				
 
 			}
