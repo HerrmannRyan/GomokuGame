@@ -18,7 +18,7 @@ public class GomokuDriver
 					{
 						PlayingGame.playingGameLogic();
 						Board.playerFillingTheBoards();
-						WinningCheck.checkForFiveCol();
+						WinningCheck.checkForFiveVertically();
 						TimeUnit.MILLISECONDS.sleep(50);
 						Display.createDisplay();
 						Board.computerFillingTheBoards();

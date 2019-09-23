@@ -2,7 +2,7 @@
 public class WinningCheck
 	{
 		
-		public static void checkForFiveCol()
+		public static void checkForFiveVertically()
 		{
 			
 			boolean checkToDown = true;
